@@ -3,12 +3,17 @@ $ ->
   wait = (time, fn) -> setTimeout fn, time
 
 
+
   # меню
+  showMenu = -> $(".menu").animate "left": "0", 500, "ease"
+  hideMenu = -> $(".menu").animate "left": "-85%", 500, "ease"
+
   toggleMenu = ->
     if 0 is $(".menu").offset().left
-     $(".menu").animate "left": "-85%", 500, "ease"
+      hideMenu()
     else
-     $(".menu").animate "left": "0", 500, "ease"
+      showMenu()
+
 
   TapEvent = if (`'ontouchstart' in window`) then "touchstart" else "mousedown"
 
@@ -130,9 +135,12 @@ $ ->
       wait 1000, -> $(".next-page").removeClass "hidden"
       
 
-  $(".pages-container").on   "swipeUp", nextSlide
-  $(".next-page").on      "touchstart", nextSlide
-  $(".pages-container").on "swipeDown", prevSlide
+  $(".pages-container").on   "swipeUp",    nextSlide
+  $(".next-page").on         "touchstart", nextSlide
+  $(".pages-container").on   "swipeDown",  prevSlide
+
+  $(".pages-container").on   "swipeLeft",  hideMenu
+  $(".pages-container").on   "swipeRight", showMenu
 
   # прокрутка
   lastWheel = Date.now()
@@ -149,7 +157,6 @@ $ ->
 
 
   # перейти к странице
-  
   $(".menu li a").on TapEvent, (e) ->
     name = $(e.currentTarget).data "name"
     active =  $("section.page.active")
@@ -163,18 +170,3 @@ $ ->
     # console.log "select #{name}"
 
 
-# активная страница помечена
-# на ней есть количество шагов от 0 до 5?
-# на уходящей и приходящей странице
-# должен быть описан эффект анимации - заезд или пропадание
-#
-# Эффекты для страниц
-# appear-from-top
-# appear-from-bottom
-# appear-from-transparency
-# appear-from-top-and-transparency
-# appear-from-bottom-and-transparency
-# disapear-to-top
-# disapear-to-bottom
-# disapear-become-transparent
-# 
