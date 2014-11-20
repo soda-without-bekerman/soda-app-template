@@ -18,7 +18,8 @@
 <section class="page active" data-name="first-page" 
 	 data-in-effect="appear-from-top"
 	 data-out-effect="disapear-to-top"
-	 data-steps-total="3" data-step-next="1" data-step-prev="0">
+	 data-steps-total="3"
+	 >
   <div class="pd1">
   <br>
   <br>

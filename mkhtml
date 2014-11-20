@@ -3,4 +3,4 @@
 #styles
 stylus css/*.styl
 
-swig render templates/landing.swig > index.html
+swig render templates/main.swig > index.html
