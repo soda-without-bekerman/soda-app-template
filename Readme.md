@@ -21,6 +21,7 @@
 `stylus`, `swig`
 
 ## == ДОКУМЕНТАЦИЯ ==
+- [стили](docs/styles.md)
 - [цвета](docs/colors.md)
 - [эффекты](docs/effects.md)
 
