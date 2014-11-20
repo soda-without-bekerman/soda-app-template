@@ -16,3 +16,19 @@
   </section>		   
 ```
 
+### В файле `menu.swig`
+
+```html
+  <li>
+    <a href="#" data-name="my-cool-page">
+	  <span class="fa fa-cloud"></span> <span class="title">моя страница</span>
+	</a>
+  </li>
+
+```
+
+## Что если `swig` не установлен?
+
+Просто найдите соответствующие части кода в файле `index.html` и отредактируйте его.
+
+
