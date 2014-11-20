@@ -89,6 +89,16 @@
 
 Делает фон блока полупрозрачным.
 
+## Как вставлять красивые иконки?
+
+Создать элемент с классами `fa fa-xxx`, где `fa-xxx` выбираете [отсюда](http://fortawesome.github.io/Font-Awesome/icons/).
+
+Пример:
+
+```html
+  <span class="fa fa-bicycle"></span>
+```  
+
 
 
 ## Предупреждение
