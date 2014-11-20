@@ -1,24 +1,25 @@
   <ul class="menu">
     <span class="toggle-menu"><span class="fa fa-bars"></span></span>
-    <li class="">
+
+    <li>
       <a href="#" data-name="first-page"> 
 	<span class="fa fa-child"> </span> <span class="title">один</span> 
       </a>
     </li>
 
-    <li class="">
+    <li>
       <a href="#" data-name="second-page"> 
 	<span class="fa fa-child"> </span> <span class="title">два</span>
       </a>
     </li>
 
-    <li class="">
+    <li>
       <a href="#" data-name="thurd-page"> 
 	<span class="fa fa-child"> </span> <span class="title">три</span> 
       </a>
     </li>
 
-    <li class="">
+    <li>
       <a href="#" data-name="fourth-page">
 	<span class="fa fa-child"> </span> <span class="title">четыре</span>
       </a>
