@@ -1,0 +1,586 @@
+// font sizes
+.fs150
+  font-size              150%
+
+.fs110
+  font-size              110%
+
+.fs125
+  font-size              125%
+
+.fs200
+  font-size              200%
+
+.fs250
+  font-size              250%
+
+.fs300
+  font-size              300%
+
+.fs80
+  font-size              80%
+
+.lh15
+  line-height            1.5
+
+.lh1
+  line-height            1 !important
+
+// paddings
+.pd1
+  padding                1em
+
+.pd01
+  padding                0 1em
+
+.pd005
+  padding                0 0.5em
+
+.cover
+  background-position    center center
+  background-size        cover
+  background-attachment  fixed
+  background-repeat      no-repeat
+
+.bg-contain
+  background-position    center center
+  background-size        contain
+  background-attachment  fixed
+  background-repeat      no-repeat
+
+.boxsz
+  box-sizing              border-box 
+  -moz-box-sizing         border-box 
+  -webkit-box-sizing      border-box 
+
+.grey-box
+  background-color        rgba(black, 0.4)
+
+// ----------------------------------------
+// text effects
+neonText(clr, opacity, clr2=clr)
+  color                rgba(clr, 1)
+  text-shadow          0 0 1em rgba(clr2, opacity), 0 0 2em rgba(clr2, opacity), 0 0 2em rgba(clr2, opacity)
+
+smallNeonText(clr, opacity, clr2=clr)
+  color                rgba(clr, 1) !important
+  text-shadow          0 0 .5em rgba(clr2, opacity), 0 0 1em rgba(clr2, opacity), 0 0 1.5em rgba(clr2, opacity)
+
+
+// colors
+nicePink         = #FA4D73
+niceDarkPink     = #FF14D7
+niceScarlet      = #fa8072
+niceDarkScarlet  = #ff6a6a
+niceRed          = #FC4541
+niceDarkRed      = #AC1400
+niceGreen        = #5ed900
+niceDarkGreen    = #56C493
+niceLime         = #64FF33
+niceDarkLime     = #00aa35
+niceSky          = #44DDFF
+niceDarkSky      = #17d1ff
+niceBlue         = #0061FF
+niceDarkBlue     = #004ee7
+niceCyan         = #88E9E9
+niceDarkCyan     = #0DB7B6
+niceYellow       = #fffa00
+niceDarkYellow   = #FFCC33
+niceOrange       = #FE7002
+niceDarkOrange   = #DF5525
+niceMagenta      = #D144FF
+niceDarkMagenta  = #9d00ee
+niceViolet       = #6495ED
+niceDarkViolet   = #410095
+niceWhite        = #F9F9F9
+niceBlack        = #111111
+niceBrown        = #ca9700
+niceDarkBrown    = #893D00
+niceSteel        = #4876ff
+niceDarkSteel    = #243b80
+niceCoffee       = #6f4e37
+niceYellowGreen  = #9ACD32
+niceSilver       = #C0C0C0
+niceGold         = #FFD700
+
+.nice-pink
+  color               nicePink !important
+.nice-pink-neon
+  smallNeonText       nicePink, 0.65
+.nice-pink-bg
+  background-color    nicePink !important
+
+.nice-dark-pink
+  color               niceDarkPink !important
+.nice-dark-pink-neon
+  smallNeonText       niceDarkPink, 0.65
+.nice-dark-pink-bg
+  background-color    niceDarkPink !important
+
+.nice-scarlet
+  color               niceScarlet !important
+.nice-scarlet-neon
+  smallNeonText       niceScarlet, 0.65
+.nice-scarlet-bg
+  background-color    niceScarlet !important
+
+.nice-dark-scarlet
+  color               niceDarkSteel !important
+.nice-dark-scarlet-neon
+  smallNeonText       niceDarkScarlet, 0.65
+.nice-dark-scarlet-bg
+  background-color    niceDarkSteel !important
+
+.nice-red
+  color               niceRed !important
+.nice-red-neon
+  smallNeonText       niceRed, 0.65
+.nice-red-bg
+  background-color    niceRed !important
+
+.nice-dark-red
+  color               niceDarkRed !important
+.nice-dark-red-neon
+  smallNeonText       niceDarkRed, 0.65
+.nice-dark-red-bg
+  background-color    niceDarkRed !important
+
+.nice-green
+  color               niceGreen !important
+.nice-green-neon
+  smallNeonText       niceGreen, 0.65
+.nice-green-bg
+  background-color    niceGreen !important
+
+.nice-dark-green
+  color               niceDarkGreen !important
+.nice-dark-green-neon
+  smallNeonText       niceDarkGreen, 0.65
+.nice-dark-green-bg
+  background-color    niceDarkGreen !important
+
+.nice-lime
+  color               niceLime !important
+.nice-lime-neon
+  smallNeonText       niceLime, 0.65
+.nice-lime-bg
+  background-color    niceLime !important
+
+.nice-dark-lime
+  color               niceDarkLime !important
+.nice-dark-lime-neon
+  smallNeonText       niceDarkLime, 0.65
+.nice-dark-lime-bg
+  background-color    niceDarkLime !important
+
+.nice-sky
+  color               niceSky !important
+.nice-sky-neon
+  smallNeonText       niceSky, 0.65
+.nice-sky-bg
+  background-color    niceSky !important
+
+.nice-dark-sky
+  color               niceDarkSky !important
+.nice-dark-sky-neon
+  smallNeonText       niceDarkSky, 0.65
+.nice-dark-sky-bg
+  background-color    niceDarkSky !important
+
+.nice-blue
+  color               niceBlue !important
+.nice-blue-neon
+  smallNeonText       niceBlue, 0.65
+.nice-blue-bg
+  background-color    niceBlue !important
+
+.nice-dark-blue
+  color               niceDarkBlue !important
+.nice-dark-blue-neon
+  smallNeonText       niceDarkBlue, 0.65
+.nice-dark-blue-bg
+  background-color    niceDarkBlue !important
+
+.nice-cyan
+  color               niceCyan !important
+.nice-cyan-neon
+  smallNeonText       niceCyan, 0.65
+.nice-cyan-bg
+  background-color    niceCyan !important
+
+.nice-dark-cyan
+  color               niceDarkCyan !important
+.nice-dark-cyan-neon
+  smallNeonText       niceDarkCyan, 0.65
+.nice-dark-cyan-bg
+  background-color    niceDarkCyan !important
+
+.nice-yellow
+  color               niceYellow !important
+.nice-yellow-neon
+  smallNeonText       niceYellow, 0.65
+.nice-yellow-bg
+  background-color    niceYellow !important
+
+.nice-dark-yellow
+  color               niceDarkYellow !important
+.nice-dark-yellow-neon
+  smallNeonText       niceDarkYellow, 0.65
+.nice-dark-yellow-bg
+  background-color    niceDarkYellow !important
+
+.nice-orange
+  color               niceOrange !important
+.nice-orange-neon
+  smallNeonText       niceOrange, 0.65
+.nice-orange-bg
+  background-color    niceOrange !important
+
+.nice-dark-orange
+  color               niceDarkOrange !important
+.nice-dark-orange-neon
+  smallNeonText       niceDarkOrange, 0.65
+.nice-dark-orange-bg
+  background-color    niceDarkOrange !important
+
+.nice-magenta
+  color               niceMagenta !important
+.nice-magenta-neon
+  smallNeonText       niceMagenta, 0.65
+.nice-magenta-bg
+  background-color    niceMagenta !important
+
+.nice-dark-magenta
+  color               niceDarkMagenta !important
+.nice-dark-magenta-neon
+  smallNeonText       niceDarkMagenta, 0.65
+.nice-dark-magenta-bg
+  background-color    niceDarkMagenta !important
+
+.nice-violet
+  color               niceViolet !important
+.nice-violet-neon
+  smallNeonText       niceViolet, 0.65
+.nice-violet-bg
+  background-color    niceViolet !important
+
+.nice-dark-violet
+  color               niceDarkViolet !important
+.nice-dark-violet-neon
+  smallNeonText       niceDarkViolet, 0.65
+.nice-dark-violet-bg
+  background-color    niceDarkViolet !important
+
+.nice-white
+  color               niceWhite !important
+.nice-white-neon
+  smallNeonText       niceWhite, 0.65
+.nice-white-bg
+  background-color    niceWhite !important
+
+.nice-black
+  color               niceBlack !important
+.nice-black-neon
+  smallNeonText       niceBlack, 0.65
+.nice-black-bg
+  background-color    niceBlack !important
+
+.nice-brown
+  color               niceBrown !important
+.nice-brown-neon
+  smallNeonText       niceBrown, 0.65
+.nice-brown-bg
+  background-color    niceBrown !important
+
+.nice-dark-brown
+  color               niceDarkBrown !important
+.nice-dark-brown-neon
+  smallNeonText       niceDarkBrown, 0.65
+.nice-dark-brown-bg
+  background-color    niceDarkBrown !important
+
+.nice-steel
+  color               niceSteel !important
+.nice-steel-neon
+  smallNeonText       niceSteel, 0.65
+.nice-steel-bg
+  background-color    niceSteel !important
+
+.nice-dark-steel
+  color               niceDarkSteel !important
+.nice-dark-steel-neon
+  smallNeonText       niceDarkSteel, 0.65
+.nice-dark-steel-bg
+  background-color    niceDarkSteel !important
+
+.nice-coffee
+  color               niceCoffee !important
+.nice-coffee-neon
+  smallNeonText       niceCoffee, 0.65
+.nice-coffee-bg
+  background-color    niceCoffee !important
+
+.nice-yellow-green
+  color               niceYellowGreen !important
+.nice-yellow-green-neon
+  smallNeonText       niceYellowGreen, 0.65
+.nice-yellow-green-bg
+  background-color    niceYellowGreen !important
+
+.nice-silver
+  color               niceSilver !important
+.nice-silver-neon
+  smallNeonText       niceSilver, 0.65
+.nice-silver-bg
+  background-color    niceSilver !important
+
+.nice-gold
+  color               niceGold !important
+.nice-gold-neon
+  smallNeonText       niceGold, 0.65
+.nice-gold-bg
+  background-color    niceGold !important
+
+
+
+body
+  background-color       black
+
+// extra
+
+.w100
+  width                  100%
+
+.w15em
+  width                  1.5em
+  text-align             center
+
+ul
+  list-style-type        none
+
+.pointer
+  cursor                  pointer
+
+.float-right
+  float                   right 
+
+.helvetica
+  font-family             Helvetica
+
+.verdana
+  font-family             Verdana
+
+.caps
+  font-variant            small-caps
+
+.justify
+  text-align              justify
+  text-justify            inter-word
+
+.left
+  text-align              left
+
+h1, h2, h3
+  font-size               300%
+  text-align              center
+  line-height             2.5
+
+h3
+  font-size               200%
+
+@media only screen and (max-width: 400px)
+  h1, h2
+    font-size             150%
+  h3
+    font-size             120%
+
+@media only screen and (max-width: 320px)
+  h1, h2
+    font-size             130%
+  h3
+    font-size             108%
+
+
+a
+  text-decoration         none
+  color                   inherit
+
+*:focus
+  outline   0
+
+.center
+  text-align             center
+
+.boxsz
+  box-sizing              border-box 
+  -moz-box-sizing         border-box 
+  -webkit-box-sizing      border-box 
+
+pre code
+  text-align              left
+
+// global
+
+
+.page
+  width                   100%
+  height                  100vh
+  overflow                hidden
+  background-color        niceDarkSky
+
+//for i in 1 2 3 4 5
+//  .page:nth-child({i})
+//    background-color      lighten(niceDarkBlue, i*4%)
+
+
+
+header
+  background-color        darken(white, 20%)
+  height                  2em
+
+.menu
+  padding                 0.5em 1em
+  line-height             1.5
+  box-sizing              border-box 
+  -moz-box-sizing         border-box 
+  -webkit-box-sizing      border-box 
+  z-index                 1000
+
+  .toggle-menu 
+     display              none
+
+.next-page
+  display                 none
+
+// mobile 
+@media only screen and (max-width: 400px)
+  header
+   position             fixed
+   top                  0
+   width                100%
+   z-index              1000
+
+  .menu
+    width               80%
+    position            fixed
+    left                -85%
+    height              100vh
+    top                 2em
+    background-color    white
+    box-shadow          4px 4px 4px black
+
+    li
+      font-family               Helvetica, Verdana
+
+      a
+        font-size               150%
+        display                 block  
+
+    .toggle-menu
+      color         #555
+      position      fixed
+      top           0
+      left          0
+      font-size     150%
+      display       block
+      width         1.5em
+      text-align    center
+
+
+  .next-page
+    background-color         ivory
+    position                 fixed
+    z-index                  500
+    bottom                   1em
+    right                    1em
+    border-radius            2em
+    width                    2em
+    height                   2em
+    line-height              2.2
+    text-align               center
+    font-size                150%
+    display                  block
+    box-shadow               3px 3px 3px #333
+    transition               all 750ms
+
+    &.hidden
+     box-shadow              0 0 0 #333
+     opacity                 0
+
+// --------------------------------------------------
+// animation effects
+transform-translate()
+  transform                  translate( arguments )
+  -webkit-transform          translate( arguments )
+  -moz-transform             translate( arguments )
+  -o-transform               translate( arguments )
+
+animation()
+  animation                  arguments
+  -webkit-animation          arguments
+  -moz-animation             arguments
+  -o-animation               arguments
+
+
+
+// bounce from bottom
+@keyframes bfb
+  0% 
+    transform                translate3d(0, 5em, 0)
+  50%
+    transform                translate3d(0, -1em, 0)
+  75%
+    transform                translate3d(0, 1em, 0)
+  100%
+    transform                translate3d(0, 0, 0)
+
+// bounce from top
+@keyframes bft
+  0% 
+    transform                translate3d(0, -5em, 0)
+  50%
+    transform                translate3d(0, 1em, 0)
+  75%
+    transform                translate3d(0, -1em, 0)
+  100%
+    transform                translate3d(0, 0, 0)
+
+// appear from left
+@keyframes afl
+  0%
+    transform                translate3d(-10em,  0, 0)
+    opacity                  0
+  100%
+    transform                translate3d(0, 0, 0)
+    opacity                  1
+
+// appear from right
+@keyframes afr
+  0% 
+    transform                translate3d(10em,  0, 0)
+    opacity                  0
+  100%
+    transform                translate3d(0, 0, 0)
+    opacity                  1
+
+
+// ----------------------------------------
+// animations
+.animation-element
+  transition                 all 500ms
+
+.anim-invisible
+  opacity                    0
+
+.anim-bounce-from-bottom
+  animation                  bfb 750ms 1
+
+.anim-bounce-from-top
+  animation                  bft 750ms 1
+
+.anim-appear-from-left
+  animation                  afl 750ms 1
+
+.anim-appear-from-right
+  animation                  afr 750ms 1
+
