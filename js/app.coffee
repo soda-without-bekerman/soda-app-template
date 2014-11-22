@@ -135,12 +135,15 @@ $ ->
       wait 1000, -> $(".next-page").removeClass "hidden"
       
 
-  $(".pages-container").on   "swipeUp",    nextSlide
-  $(".next-page").on         "touchstart", nextSlide
-  $(".pages-container").on   "swipeDown",  prevSlide
+  $(".pages-container").on   "swipeUp",    (e) -> e.preventDefault();  nextSlide()
+  $(".next-page").on         "touchstart", (e) -> e.preventDefault();  nextSlide()
+  $(".pages-container").on   "swipeDown",  (e) -> e.preventDefault();  prevSlide()
 
-  $(".pages-container").on   "swipeLeft",  hideMenu
-  $(".pages-container").on   "swipeRight", showMenu
+  $(".pages-container").on   "swipeLeft",  (e) -> e.preventDefault();  hideMenu()
+  $(".pages-container").on   "swipeRight", (e) -> e.preventDefault();  showMenu()
+
+  $(window).on "touchstart", (e) -> e.preventDefault()
+
 
   # прокрутка
   lastWheel = Date.now()
