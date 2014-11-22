@@ -182,11 +182,32 @@ $(function() {
       });
     }
   };
-  $(".pages-container").on("swipeUp", nextSlide);
-  $(".next-page").on("touchstart", nextSlide);
-  $(".pages-container").on("swipeDown", prevSlide);
-  $(".pages-container").on("swipeLeft", hideMenu);
-  $(".pages-container").on("swipeRight", showMenu);
+  $(".pages-container").on("swipeUp", function(e) {
+    e.preventDefault();
+    return nextSlide();
+  });
+  $(".next-page").on("touchstart", function(e) {
+    e.preventDefault();
+    return nextSlide();
+  });
+  $(".pages-container").on("swipeDown", function(e) {
+    e.preventDefault();
+    return prevSlide();
+  });
+  $(".pages-container").on("swipeLeft", function(e) {
+    e.preventDefault();
+    return hideMenu();
+  });
+  $(".pages-container").on("swipeRight", function(e) {
+    e.preventDefault();
+    return showMenu();
+  });
+  $(window).on("touchstart", function(e) {
+    return e.preventDefault();
+  });
+  $(".no-swipe").on("touchstart mousewheel", function(e) {
+    return e.stopPropagation();
+  });
   lastWheel = Date.now();
   $(".pages-container").on("mousewheel", function(e) {
     var delta, now;

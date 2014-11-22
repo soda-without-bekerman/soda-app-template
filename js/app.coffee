@@ -145,6 +145,8 @@ $ ->
   $(window).on "touchstart", (e) -> e.preventDefault()
 
 
+  $(".no-swipe").on "touchstart mousewheel", (e) -> e.stopPropagation()
+
   # прокрутка
   lastWheel = Date.now()
   $(".pages-container").on "mousewheel", (e) ->
