@@ -14,7 +14,31 @@
   ./mkhtml
 ```
 
-### == *`phonegap`* ==
+### == *`cordova`/ `phonegap`* ==
+
+Для создания приложения выполните команды:
+
+```bash
+git clone git@github.com:soda-io/soda-app-template.git
+cd ..
+cordova create SODA com.domain.my  SODA # (1)
+cd SODA
+cordova platform add ios android
+cp -R ../soda-app-template/* www
+cordova serve ios
+```
+
+#### (1) Измените название или домен, если знаете как, инача лучше оставить как есть
+
+#### Предполагается что в системе корректно установлены [`cordova`](https://github.com/apache/cordova-cli), [`Xcode`](https://developer.apple.com/xcode/downloads/) и [`Android SDK`](https://developer.android.com/sdk/installing/index.html?pkg=tools)
+*Если это не так, пропустите соответствующие шаги или установите библиотеки*
+
+#### Внимание
+
+- при первом запуске из консоли (`cordova run android`) могут возникнуть проблемы, которые нужно исправить руками.
+- все иконки и загрузочный экран будут по умолчанию от `cordova`
+
+
 
 ## == ЗАВИСИМОСТИ ==
 
