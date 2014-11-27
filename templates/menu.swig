@@ -1,4 +1,4 @@
-  <ul class="menu collapsed popup-style">
+  <ul class="menu collapsed ">
     <span class="toggle-menu"><span class="fa fa-bars"></span></span>
 
     <li>
