@@ -1,0 +1,200 @@
+// http://codepen.io/P233/pen/lGewF
+
+// General Style
+
+
+// Colors
+bg    = transparent
+white = #eee9dc
+passedCol  = #4876ff
+red   = #f98262
+
+
+
+section.timeline
+  max-width: 1200px
+  margin: 0 auto
+  padding: 0 5%
+  font-size: 100%
+  font-family: 'Noto Sans', sans-serif
+  color: white
+  background: bg
+
+  h2
+    margin: 3em 0 0 0
+    font-size: 1.5em
+    letter-spacing: 2px
+    text-transform: uppercase
+
+// timeline
+
+  .the-timeline
+    list-style: none
+    margin: 50px 0 30px 120px
+    padding-left: 30px
+    border-left: 8px solid white
+    li
+      margin: 40px 0
+      position: relative
+
+      &.passed
+        .date 
+          color           passedCol
+        .circle
+          background      passedCol
+          border-color    passedCol
+          
+        .radio:checked
+          & + .relative
+            .circle
+              background: red
+
+
+    p
+      margin: 0 0 15px
+  
+  .date
+    margin-top: -10px
+    top: 50%
+    left: -158px
+    font-size: 0.95em
+    line-height: 20px
+    position: absolute
+  .circle
+    margin-top: -10px
+    top: 50%
+    left: -44px
+    width: 10px
+    height: 10px
+    background: white
+    border: 5px solid white
+    border-radius: 50%
+    display: block
+    position: absolute
+  
+  .content
+    max-height: 20px
+    padding: 50px 20px 0
+    border-color: transparent
+    border-width: 2px
+    border-style: solid
+    border-radius: 0.5em
+    position: relative
+    &:before, &:after
+      content: ""
+      width: 0
+      height: 0
+      border: solid transparent
+      position: absolute
+      pointer-events: none
+      right: 100%
+  
+    &:before
+      border-right-color: inherit
+      border-width: 20px
+      top: 50%
+      margin-top: -20px
+  
+    &:after
+      border-right-color: bg
+      border-width: 17px
+      top: 50%
+      margin-top: -17px
+    p
+      max-height: 0
+      color: transparent
+      text-align: justify
+      word-break: break-word
+      hyphens: auto
+      overflow: hidden
+
+    .date
+      display      none
+  
+  label
+    font-size: 1.3em
+    position: absolute
+    z-index: 100
+    cursor: pointer
+    top: 20px
+    transition: transform 0.2s linear
+  
+  .radio
+    display: none
+  .radio:checked
+    & + .relative
+      label
+        cursor: auto
+        transform: translateX(42px)
+  
+      .circle
+        background: red
+    & ~ .content
+      max-height: 60vh
+      border-color: white
+      margin-right: 20px
+      transform: translateX(20px)
+      transition: max-height 0.4s linear, border-color 0.5s linear, transform 0.2s linear
+      p
+        max-height: 200px
+        color: white
+        transition: color 0.3s linear 0.3s
+
+      &.sky
+       sky = #44DDFF
+       border-color        sky
+       p
+         color             sky
+
+      &.lime
+       lime =  #64FF33
+       border-color        lime
+       p
+         color             lime
+
+      &.green
+       green = #5ed900
+       border-color        green
+       p
+         color             green
+
+      &.orange
+       orange = #FE7002
+       border-color        orange
+       p
+         color             orange
+
+
+
+// mobile phones (vertical version only)
+
+@media screen and (max-width: 400px)
+  section.timeline
+    font-size          250%
+    .the-timeline
+      margin-left: 0
+      padding-left: 0
+      li
+        margin: 50px 0
+    label
+      width: 85%
+      font-size: 1.1em
+      white-space: nowrap
+      text-overflow: ellipsis
+      overflow: hidden
+      display: block
+      transform: translateX(18px)
+    .content
+      p
+        font-size: 0.9em
+        line-height: 1.4
+ 
+      .date
+        display       block
+        position      static
+        color         #aaa
+
+    .date
+      display: none
+    .circle
+      left            -14px
