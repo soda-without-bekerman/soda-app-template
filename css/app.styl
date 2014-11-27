@@ -477,11 +477,21 @@ header
     left                -85%
     height              100vh
     top                 2em
-    background-color    white
+    background-color    black
+    color               white
     box-shadow          4px 4px 4px black
+
+    &.popup-style
+      left              0
+      top               -110vh
+      width             auto
+      height            auto !important
+      overflow          scroll
+      box-shadow        0 0 4px black
 
     li
       font-family               Helvetica, Verdana
+      line-height               1.5
 
       a
         font-size               150%
@@ -490,9 +500,9 @@ header
     .toggle-menu
       color         #555
       position      fixed
-      top           0
-      left          0
-      font-size     150%
+      top           -0.2em
+      left          -0.2em
+      font-size     200%
       display       block
       width         1.5em
       text-align    center

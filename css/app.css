@@ -1,11 +1,26 @@
-.fs150 {
-  font-size: 150%;
+.fs60 {
+  font-size: 60%;
+}
+.fs70 {
+  font-size: 70%;
+}
+.fs80 {
+  font-size: 80%;
+}
+.fs90 {
+  font-size: 90%;
 }
 .fs110 {
   font-size: 110%;
 }
 .fs125 {
   font-size: 125%;
+}
+.fs150 {
+  font-size: 150%;
+}
+.fs180 {
+  font-size: 180%;
 }
 .fs200 {
   font-size: 200%;
@@ -16,26 +31,71 @@
 .fs300 {
   font-size: 300%;
 }
-.fs80 {
-  font-size: 80%;
+.lh11 {
+  line-height: 1.1 !important;
 }
-.fs60 {
-  font-size: 60%;
+.lh12 {
+  line-height: 1.2 !important;
+}
+.lh13 {
+  line-height: 1.3 !important;
+}
+.lh14 {
+  line-height: 1.4 !important;
 }
 .lh15 {
-  line-height: 1.5;
+  line-height: 1.5 !important;
 }
-.lh1 {
-  line-height: 1 !important;
+.lh16 {
+  line-height: 1.6 !important;
 }
-.pd1 {
+.lh18 {
+  line-height: 1.8 !important;
+}
+.lh20 {
+  line-height: 2 !important;
+}
+.lh22 {
+  line-height: 2.2 !important;
+}
+.lh25 {
+  line-height: 2.5 !important;
+}
+.lh28 {
+  line-height: 2.8 !important;
+}
+.lh30 {
+  line-height: 3 !important;
+}
+.pd-1 {
   padding: 1em;
 }
-.pd01 {
+.pd-05 {
+  padding: 0.5em;
+}
+.pd-0-1 {
   padding: 0 1em;
 }
-.pd005 {
+.pd-0-05 {
   padding: 0 0.5em;
+}
+.pd-0.5-0 {
+  padding: 0.5em 0;
+}
+.mg-1 {
+  margin: 1em;
+}
+.mg-05 {
+  margin: 0.5em;
+}
+.mg-0-1 {
+  margin: 0 1em;
+}
+.mg-0-05 {
+  margin: 0 0.5em;
+}
+.mg-0.5-0 {
+  margin: 0.5em 0;
 }
 .cover {
   background-position: center center;
@@ -54,8 +114,59 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
 }
-.grey-box {
+.grey-box-01 {
+  background-color: rgba(0,0,0,0.1);
+}
+.white-box-01 {
+  background-color: rgba(255,255,255,0.1);
+}
+.grey-box-02 {
+  background-color: rgba(0,0,0,0.2);
+}
+.white-box-02 {
+  background-color: rgba(255,255,255,0.2);
+}
+.grey-box-03 {
+  background-color: rgba(0,0,0,0.3);
+}
+.white-box-03 {
+  background-color: rgba(255,255,255,0.3);
+}
+.grey-box-04 {
   background-color: rgba(0,0,0,0.4);
+}
+.white-box-04 {
+  background-color: rgba(255,255,255,0.4);
+}
+.grey-box-05 {
+  background-color: rgba(0,0,0,0.5);
+}
+.white-box-05 {
+  background-color: rgba(255,255,255,0.5);
+}
+.grey-box-06 {
+  background-color: rgba(0,0,0,0.6);
+}
+.white-box-06 {
+  background-color: rgba(255,255,255,0.6);
+}
+.grey-box-07 {
+  background-color: rgba(0,0,0,0.7);
+}
+.white-box-07 {
+  background-color: rgba(255,255,255,0.7);
+}
+.grey-box-08 {
+  background-color: rgba(0,0,0,0.8);
+}
+.white-box-08 {
+  background-color: rgba(255,255,255,0.8);
+}
+.grey-box-09 {
+  background-color: rgba(0,0,0,0.9);
+}
+.white-box-09 {
+  background-color: rgba(255,255,255,0.9);
 }
 .nice-pink {
   color: #fa4d73 !important;
@@ -513,11 +624,21 @@ header {
     left: -85%;
     height: 100vh;
     top: 2em;
-    background-color: #fff;
+    background-color: #000;
+    color: #fff;
     box-shadow: 4px 4px 4px #000;
+  }
+  .menu.popup-style {
+    left: 0;
+    top: -110vh;
+    width: auto;
+    height: auto !important;
+    overflow: scroll;
+    box-shadow: 0 0 4px #000;
   }
   .menu li {
     font-family: Helvetica, Verdana;
+    line-height: 1.5;
   }
   .menu li a {
     font-size: 150%;
@@ -526,9 +647,9 @@ header {
   .menu .toggle-menu {
     color: #555;
     position: fixed;
-    top: 0;
-    left: 0;
-    font-size: 150%;
+    top: -0.2em;
+    left: -0.2em;
+    font-size: 200%;
     display: block;
     width: 1.5em;
     text-align: center;

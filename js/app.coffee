@@ -5,14 +5,37 @@ $ ->
 
 
   # меню
-  showMenu = -> $(".menu").animate "left": "0", 500, "ease"
-  hideMenu = -> $(".menu").animate "left": "-85%", 500, "ease"
+  getMenuType = ->
+    if $(".menu").hasClass "popup-style"
+      "popup"
+    else
+      "normal"
+
+  showMenu = ->
+    switch getMenuType()
+      when "normal"
+        $(".menu").animate "left": "0", 500, "ease", -> $(".menu").removeClass "collapsed"
+      when "popup"
+        {width, height} = $(".menu").offset()
+        [w, h]  = [window.innerWidth, window.innerHeight]
+        height  = 0.9 * h if height > 0.9 * h
+        left    = parseInt (w - width) / 2
+        top     = parseInt (h - height) / 2
+        $(".menu").css  "left": "#{left}px"
+        $(".menu").animate  "top": "#{top}px",  500, "ease", -> $(".menu").removeClass "collapsed"
+  
+  hideMenu = ->
+    switch getMenuType()
+      when "normal"
+        $(".menu").animate "left": "-85%", 500, "ease", $(".menu").addClass "collapsed"
+      when "popup"
+        $(".menu").animate "top": "-120vh",  500, "ease", $(".menu").addClass "collapsed"
 
   toggleMenu = ->
-    if 0 is $(".menu").offset().left
-      hideMenu()
-    else
+    if $(".menu").hasClass "collapsed"
       showMenu()
+    else
+      hideMenu()
 
 
   TapEvent = if (`'ontouchstart' in window`) then "touchstart" else "mousedown"
