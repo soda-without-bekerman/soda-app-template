@@ -1,43 +1,47 @@
 // font sizes
-.fs150
-  font-size              150%
 
-.fs110
-  font-size              110%
+for s in 60 70 80 90 110 125 150 180 200 250 300
+  .fs{s}
+    font-size            unit(s, '%')
 
-.fs125
-  font-size              125%
+// line height
+for l in 11 12 13 14 15 16 18 20 22 25 28 30
+  .lh{l}
+    line-height            (l/10) !important
 
-.fs200
-  font-size              200%
 
-.fs250
-  font-size              250%
-
-.fs300
-  font-size              300%
-
-.fs80
-  font-size              80%
-
-.fs60
-  font-size              60%
-
-.lh15
-  line-height            1.5
-
-.lh1
-  line-height            1 !important
-
-// paddings
-.pd1
+// padding
+.pd-1
   padding                1em
 
-.pd01
+.pd-05
+  padding                0.5em
+
+.pd-0-1
   padding                0 1em
 
-.pd005
+.pd-0-05
   padding                0 0.5em
+
+.pd-0.5-0
+  padding                0.5em 0
+
+// margin
+.mg-1
+  margin                1em
+
+.mg-05
+  margin                0.5em
+
+.mg-0-1
+  margin                0 1em
+
+.mg-0-05
+  margin                0 0.5em
+
+.mg-0.5-0
+  margin                0.5em 0
+
 
 .cover
   background-position    center center
@@ -56,8 +60,13 @@
   -moz-box-sizing         border-box 
   -webkit-box-sizing      border-box 
 
-.grey-box
-  background-color        rgba(black, 0.4)
+
+for i in 1 2 3 4 5 6 7 8 9 
+  .grey-box-0{i}
+    background-color        rgba(black, (i/10))
+
+  .white-box-0{i}
+    background-color        rgba(white, (i/10))
 
 // ----------------------------------------
 // text effects
