@@ -28,7 +28,7 @@ cp -R ../soda-app-template/* www
 cordova serve ios
 ```
 
-#### (1) Измените название или домен, если знаете как, инача лучше оставить как есть
+#### (1) Измените название или домен, если знаете как, иначе лучше оставить как есть
 
 #### Предполагается что в системе корректно установлены [`cordova`](https://github.com/apache/cordova-cli), [`Xcode`](https://developer.apple.com/xcode/downloads/) и [`Android SDK`](https://developer.android.com/sdk/installing/index.html?pkg=tools)
 *Если это не так, пропустите соответствующие шаги или установите библиотеки*
